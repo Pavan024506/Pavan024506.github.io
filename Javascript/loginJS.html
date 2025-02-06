@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function user(e){
+            let username=document.getElementById("name").value 
+            let password=document.getElementById("pwd").valule
+            if(username=="" || password=="" ){
+                document.write(" Email address or password cannot be blank ");
+            }
+            if(username == "pk@mail.com" || password =="024"){
+                msg.innerHTML="welcome pavan";
+            }
+            else{
+                msg.innerHTML="Access denaied";
+            }
+        }
+
+    </script>  
+    <style> 
+    .container{
+        text-align: center;
+        border: 2px solid silver;
+        display: flex;
+        width: 500px;
+        height: 350px;
+        justify-content: center;
+        
+    }
+
+    .box{
+        border: 2px solid silver;
+        padding: 20px;
+        width: 400px;
+        border-radius: 20px;
+        justify-content: center;
+
+    }
+    input{
+        padding: 20px;
+        width: 90%;
+    }
+    button{
+        background-color: blue;
+        width: 100%;
+        border-radius: 10px;
+        color: white;
+        font-size: xx-large;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+    <p><div id="msg"></div></p>
+    <div>
+        <h1>Login form </h1>
+        <p><input type="text" id="name" placeholder="enter email or phone number"></p>
+       <p> <input type="password" id="pwd" placeholder="enter password"></div></p>
+        <p><button style="background-color: blue;"   onclick="user()">Login</button></p>
+    </div>
+        </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function f1(){
+        let v=document.getElementById("name").value
+        //alert(v)
+       if(v>90){
+        msg.innerHTML="Grade A"
+       }
+       else if(v>70){
+        msg.innerHTML="Grade B"
+       }
+       else if(v>60){
+        msg.innerHTML="Grade C"
+       }
+       else if(v>50){
+        msg.innerHTML="Grade D"
+       }
+       else if(v>35){
+        msg.innerHTML="Grade E"
+       }
+       else{
+        msg.innerHTML="you failed bettre luck next time"
+       }
+
+       
+       
+    }
+    </script>
+</head>
+<body>
+    <input type="number" id="name" placeholder="enter your marks">
+    <button onclick="f1()">Submit </button>
+    <hr>
+    <div id="msg"></div>
+
+</body>
+</html>

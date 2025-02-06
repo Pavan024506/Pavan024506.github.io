@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Table(){
+           
+            let str=""
+            //`let str=`${a}+${b}=${a+b}<br>`;
+            for(let i=0;i<=10;i++){
+                let number=Number(document.getElementById("num").value);
+                str+=`${number} X ${i}=${number*i}<br>`;
+                
+            }
+            t1.innerHTML=str;
+            
+
+        }
+
+
+    </script>
+    <input type="number" id="num" onchange="Table" placeholder="enter the number">
+    <button onclick="Table()">Submit</button>
+    <div id="t1">
+</body>
+</html>

@@ -5,87 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pavan Kumar</title>
     <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Gonewar Pavan Kumar</h1>
-    <div class="container">
-      <div class="header-row"> 
-        <div class="box"><h1>Pavan Kumar</h1></div>
-        <div class="box">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+    <header class="header">
+      <h1>Pavan Kumar</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section intro" id="home">
+      <div class="intro-text">
+        <h2>Full Stack Developer</h2>
+        <p>I specialize in building dynamic, scalable, and user-friendly web applications. With expertise in both frontend and backend technologies, I develop seamless digital experiences from concept to deployment.</p>
+        <div class="skills">
+          <p>✔ <strong>Frontend:</strong> React.js, Angular, Vue.js, HTML, CSS, JavaScript, TailwindCSS</p>
+          <p>✔ <strong>Backend:</strong> Node.js, Express.js, Django, Flask, Spring Boot</p>
+          <p>✔ <strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Firebase</p>
+          <p>✔ <strong>API:</strong> RESTful & GraphQL</p>
+          <p>✔ <strong>Cloud & DevOps:</strong> AWS, Docker, Kubernetes, CI/CD</p>
+          <p>✔ <strong>Version Control:</strong> Git, GitHub, GitLab</p>
         </div>
       </div>
+      <div>
+        <img src="https://picsum.photos/id/2/400/400" alt="Pavan Kumar" />
+      </div>
+    </section>
 
-      <div class="row" id="home">
-        <div style="display: flex;padding-top: 50px;">
-          <div class="box">
-            <h1>Full Stack Developer</h1>
-            <p>
-              I specialize in building dynamic, scalable, and user-friendly web applications. With expertise in both frontend and backend technologies, I develop seamless digital experiences from concept to deployment.
-            </p>
-            <p>
-              What I Do:
-<p>✔ Frontend Development: React.js, Angular, Vue.js, HTML, CSS, JavaScript, TailwindCSS</p>
-<p>✔ Backend Development: Node.js, Express.js, Django, Flask, Spring Boot</p>
-<p>✔ Database Management: MySQL, PostgreSQL, MongoDB, Firebase</p>
-<p>✔ API Development: RESTful & GraphQL APIs</p>
-<p>✔ Cloud & DevOps: AWS, Docker, Kubernetes, CI/CD</p>
-<p>✔ Version Control: Git, GitHub, GitLab</p>
-            </p>
-          </div>
-          <div class="box">
-            <img src="https://picsum.photos/id/2/400/400" />
-          </div>
+    <section class="section projects" id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>School Website</h3>
+          <p>Built using HTML, CSS, and JavaScript for a local school.</p>
+          <a href="https://pavan024506.github.io/ZP-High-School-Hunsa/" target="_blank"><button>Live Demo</button></a>
+          <a href="https://github.com/pavan024506/ZP-High-School-Hunsa" target="_blank"><button>GitHub</button></a>
+        </div>
+
+        <div class="project-card">
+          <h3>Online Store</h3>
+          <p>E-commerce frontend project with shopping cart functionality.</p>
+          <a href="https://pavan024506.github.io/Online-store/" target="_blank"><button>Live Demo</button></a>
+          <a href="https://github.com/pavan024506/Online-store" target="_blank"><button>GitHub</button></a>
+        </div>
+
+        <div class="project-card">
+          <h3>Project Management Tool</h3>
+          <p>Web-based tool to track project tasks and progress.</p>
+          <a href="https://pavan024506.github.io/mystore/" target="_blank"><button>Live Demo</button></a>
+          <a href="https://github.com/Pavan024506/mystore" target="_blank"><button>GitHub</button></a>
+        </div>
+
+        <div class="project-card">
+          <h3>React Store</h3>
+          <p>React-based dynamic store with context-based state management.</p>
+          <a href="https://pavan024506.github.io/react-store-a/" target="_blank"><button>Live Demo</button></a>
+          <a href="https://github.com/pavan024506/rect-store-a" target="_blank"><button>GitHub</button></a>
         </div>
       </div>
-
-      <div id="projects" class="row" style="background-color: lightcoral">
-        <h1>Projects</h1>
-        <div style="display: flex">
-          <div class="box">
-            <h3>Project 1</h3>
-            <p>School website project built using HTML, CSS, and JavaScript.</p>
-            <div>
-              <a href="https://pavan024506.github.io/ZP-High-School-Hunsa/" target="_blank"><button>Live Demo</button></a>
-              <a href="https://github.com/pavan024506/ZP-High-School-Hunsa" target="_blank"><button>GitHub Repo</button></a>
-            </div>
-          </div>
-
-          <div class="box">
-            <h3>Project 2</h3>
-            <p>Online store project featuring product listings and a shopping cart.</p>
-            <div>
-              <a href="https://pavan024506.github.io/Online-store/" target="_blank"><button>Live Demo</button></a>
-              <a href="https://github.com/pavan024506/Online-store" target="_blank"><button>GitHub Repo</button></a>
-            </div>
-          </div>
-
-          <div class="box">
-            <h3>Project 3</h3>
-            <p>A project management tool to track tasks and progress.</p>
-            <div>
-              <a href="https://pavan024506.github.io/mystore/" target="_blank"><button>Live Demo</button></a>
-              <a href="https://github.com/Pavan024506/mystore" target="_blank"><button>GitHub Repo</button></a>
-            </div>
-          </div>
-
-          <div class="box">
-            <h3>React Store</h3>
-            <p>React-based online store featuring dynamic state management.</p>
-            <div>
-              <a href="https://pavan024506.github.io/react-store-a/" target="_blank"><button>Live Demo</button></a>
-              <a href="https://github.com/pavan024506/rect-store-a" target="_blank"><button>GitHub Repo</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   </body>
 </html>
